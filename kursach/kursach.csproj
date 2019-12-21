@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6CF07605-399D-4CBB-BBF4-63A4C98452D3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>kursach</RootNamespace>
+    <AssemblyName>kursach</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="db_kursachDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_kursachDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="db_kursachDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_kursachDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="electro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="electro.Designer.cs">
+      <DependentUpon>electro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gass.Designer.cs">
+      <DependentUpon>gass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="heats.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="heats.Designer.cs">
+      <DependentUpon>heats.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loggs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loggs.Designer.cs">
+      <DependentUpon>loggs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loginss.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loginss.Designer.cs">
+      <DependentUpon>loginss.cs</DependentUpon>
+    </Compile>
+    <Compile Include="objects.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="objects.Designer.cs">
+      <DependentUpon>objects.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="oilProduce.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="oilProduce.Designer.cs">
+      <DependentUpon>oilProduce.cs</DependentUpon>
+    </Compile>
+    <Compile Include="personal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="personal.Designer.cs">
+      <DependentUpon>personal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="waater.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="waater.Designer.cs">
+      <DependentUpon>waater.cs</DependentUpon>
+    </Compile>
+    <Compile Include="waterInjection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="waterInjection.Designer.cs">
+      <DependentUpon>waterInjection.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="electro.resx">
+      <DependentUpon>electro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gass.resx">
+      <DependentUpon>gass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="heats.resx">
+      <DependentUpon>heats.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loggs.resx">
+      <DependentUpon>loggs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginss.resx">
+      <DependentUpon>loginss.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="objects.resx">
+      <DependentUpon>objects.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="oilProduce.resx">
+      <DependentUpon>oilProduce.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="personal.resx">
+      <DependentUpon>personal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="waater.resx">
+      <DependentUpon>waater.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="waterInjection.resx">
+      <DependentUpon>waterInjection.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="db_kursachDataSet.xsc">
+      <DependentUpon>db_kursachDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="db_kursachDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_kursachDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_kursachDataSet.xss">
+      <DependentUpon>db_kursachDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="db_kursachDataSet1.xsc">
+      <DependentUpon>db_kursachDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="db_kursachDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_kursachDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_kursachDataSet1.xss">
+      <DependentUpon>db_kursachDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\DataSources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
